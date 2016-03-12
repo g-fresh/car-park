@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/g-fresh/car-park.svg)](https://travis-ci.org/g-fresh/car-park)
 
 # Car Park
 
