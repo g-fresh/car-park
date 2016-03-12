@@ -24,7 +24,7 @@ A small domain modeling / coding exercise.
 - After the first 30 minutes, the parking fee is 1 euro per hour.
 - Exit shows red signal, has closed barrier.
 - Exit accepts ticket and shows green signal / opens barrier, 
-  if parking fee was payed for.
-- Exit shows red signal, returns ticket is parking fee was not payed for.
+  if parking fee was payed.
+- Exit shows red signal, returns ticket is parking fee was not payed.
 - Exit shows red signal, closes barrier after car left the car park.
 
