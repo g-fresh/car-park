@@ -5,16 +5,15 @@ import me.gfresh.playground.carpark.clock.Clock;
 
 import java.util.Optional;
 
-public class Exit {
-
-	private final Clock clock;
+public class Exit extends Gateway {
 
 	public Exit(Clock clock) {
-		this.clock = clock;
+		super(clock);
 	}
 
 	public Optional<Ticket> offerTicket(Ticket ticket) {
-		if (! isExpired(ticket)) {
+		if (isPassable() && ! isExpired(ticket)) {
+			allowPassage();
 			return Optional.empty();
 		} else {
 			return Optional.of(ticket);

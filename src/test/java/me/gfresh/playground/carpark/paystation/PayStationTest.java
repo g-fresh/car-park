@@ -21,6 +21,11 @@ public class PayStationTest {
 	}
 
 	@Test
+	public void parking_is_free_for_the_first_thirty_minutes() throws Exception {
+		DateTime expirationTime = clock.now().plusMinutes(30);
+	}
+
+	@Test
 	public void price_is_one_euro_per_hour_after_the_first_thirty_minutes() throws Exception {
 		DateTime expirationTime = clock.now().plusMinutes(30); // TODO replace magic number
 		Ticket entryTicket = new Ticket(expirationTime);

@@ -8,6 +8,8 @@ import static me.gfresh.playground.carpark.paystation.Price.*;
 
 public final class PayStation {
 
+	private static final int pricePerHour = 1;
+
 	private final Clock clock;
 
 	public PayStation(Clock clock) {
@@ -34,7 +36,6 @@ public final class PayStation {
 
 	private Price calculatePrice(Period parkingTime) {
 		int hours = parkingTime.getHours() + (parkingTime.getMinutes() > 0 ? 1 : 0);
-		int pricePerHour = 1; // TODO replace magic number
 		return new Price(hours * pricePerHour);
 	}
 

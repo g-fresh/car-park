@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/g-fresh/car-park.svg)](https://travis-ci.org/g-fresh/car-park)
 
 # Car Park
 
@@ -13,7 +12,7 @@ A small domain modeling / coding exercise.
 
 ## Requirements
 
-- Before entering the car park, users must take a ticket.
+- Before entering the car park, motorists must take a ticket.
 - Entry shows red signal, has closed barrier.
 - Entry opens barrier, shows green signal after a ticket was requested.
 - Entry shows red signal, closes barrier after vehicle entered the car park.

@@ -15,4 +15,31 @@ public final class CarPark {
 		exit = new Exit(clock);
 		payStation = new PayStation(clock);
 	}
+
+
+	private Capacity capacity = new Capacity(100);
+
+	// Show free / occupied
+	class Capacity {
+
+		private int total;
+		private int used;
+
+		Capacity(int total) {
+			this.total = total;
+		}
+
+		boolean isSpaceAvailable() {
+			return used < total;
+		}
+
+		void less() {
+			used++;
+		}
+
+		void more() {
+			used--;
+		}
+	}
 }
+
